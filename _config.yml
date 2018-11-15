@@ -75,6 +75,28 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# post word count
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  
+markdown_it_plus:
+  highlight: true
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  pre_class: highlight
+  
+toc:
+  maxDepth: 3
+
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:

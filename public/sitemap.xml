@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lzhp.github.io/tags/index.html</loc>
+    <loc>http://lzhp.github.io/2018/11/15/my-first/</loc>
     
-    <lastmod>2018-11-15T16:28:42.485Z</lastmod>
+    <lastmod>2018-11-15T18:27:17.355Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lzhp.github.io/2018/11/15/my-first/</loc>
+    <loc>http://lzhp.github.io/tags/index.html</loc>
     
-    <lastmod>2018-11-15T15:12:11.483Z</lastmod>
+    <lastmod>2018-11-15T17:03:34.426Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lzhp.github.io/categories/index.html</loc>
+    
+    <lastmod>2018-11-15T17:03:20.381Z</lastmod>
     
   </url>
   
