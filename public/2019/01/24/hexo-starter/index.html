@@ -21,21 +21,6 @@
 
 
 
-  
-  
-  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
-
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -57,23 +42,21 @@
 
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=6.5.0" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.5.0">
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.5.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.5.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=6.5.0" color="#222">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
 
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
 
 
 
@@ -81,14 +64,15 @@
 
 
 
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    version: '6.5.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -110,18 +94,18 @@
 
 
 
-  <meta name="description" content="hexo入门 blog  Quick Start  Create a new post 1$ hexo new &quot;My New Post&quot; More info: Writing  Run server 1$ hexo server More info: Server  Generate static files 1$ hexo generate More info: Generating  De">
+  <meta name="description" content="hexo入门blog Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to">
 <meta name="keywords" content="spring cloud, micro service">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo入门">
 <meta property="og:url" content="http://lzhp.github.io/2019/01/24/hexo-starter/index.html">
 <meta property="og:site_name" content="不惑之技">
-<meta property="og:description" content="hexo入门 blog  Quick Start  Create a new post 1$ hexo new &quot;My New Post&quot; More info: Writing  Run server 1$ hexo server More info: Server  Generate static files 1$ hexo generate More info: Generating  De">
+<meta property="og:description" content="hexo入门blog Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-01-24T02:46:15.397Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo入门">
-<meta name="twitter:description" content="hexo入门 blog  Quick Start  Create a new post 1$ hexo new &quot;My New Post&quot; More info: Writing  Run server 1$ hexo server More info: Server  Generate static files 1$ hexo generate More info: Generating  De">
+<meta name="twitter:description" content="hexo入门blog Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to">
 
 
 
@@ -129,12 +113,13 @@
 
 
 
-
+  
+  
   <link rel="canonical" href="http://lzhp.github.io/2019/01/24/hexo-starter/">
 
 
 
-<script type="text/javascript" id="page.configurations">
+<script id="page.configurations">
   CONFIG.page = {
     sidebar: "",
   };
@@ -153,30 +138,29 @@
 
 
 
+
   <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
 
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
 
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
   </style>
 </noscript>
 
@@ -194,7 +178,7 @@
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
@@ -208,6 +192,7 @@
       
         <p class="site-subtitle">不惑，技术流，记录感悟</p>
       
+    
     
   </div>
 
@@ -389,8 +374,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo入门<a href="https://github.com/lzhp/hexo/tree/master/source/_posts/hexo-starter.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
-                
+          <h1 class="post-title" itemprop="name headline">hexo入门
+
               
             
           </h1>
@@ -429,6 +414,7 @@
 
           
             
+            
           
 
           
@@ -447,7 +433,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">402</span>
+                <span title="本文字数">385</span>
               
 
               
@@ -481,25 +467,20 @@
       
 
       
-        <h1 id="hexo入门"><a class="markdownIt-Anchor" href="#hexo入门"></a> hexo入门</h1>
-<p>blog</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h1 id="hexo入门"><a href="#hexo入门" class="headerlink" title="hexo入门"></a>hexo入门</h1><p>blog</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<h1 id="引入next主题"><a class="markdownIt-Anchor" href="#引入next主题"></a> 引入Next主题</h1>
-<p>##下载及使用<br>
-Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">https://theme-next.iissnan.com/getting-started.html</a></p>
-<h2 id="修改next的设置"><a class="markdownIt-Anchor" href="#修改next的设置"></a> 修改next的设置</h2>
-<p>项目的配置文件位置：<code>source\_data\next.yml</code>，会覆盖<code>theme\Next</code>目录下的配置文件</p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<h1 id="引入Next主题"><a href="#引入Next主题" class="headerlink" title="引入Next主题"></a>引入Next主题</h1><p>##下载及使用<br>Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">https://theme-next.iissnan.com/getting-started.html</a></p>
+<h2 id="修改next的设置"><a href="#修改next的设置" class="headerlink" title="修改next的设置"></a>修改next的设置</h2><p>项目的配置文件位置：<code>source\_data\next.yml</code>，会覆盖<code>theme\Next</code>目录下的配置文件</p>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
@@ -514,7 +495,7 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
     
 
     
-       
+      
     
     
 
@@ -566,6 +547,13 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
           
 
   
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
 
 
 
@@ -582,7 +570,6 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
@@ -598,12 +585,12 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
         </ul>
       
 
-      <section class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">lizhipeng@gmail.com</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <div class="site-description motion-element" itemprop="description"></div>
           </div>
 
           
@@ -635,6 +622,8 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
           
 
           
+
+          
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
@@ -646,39 +635,6 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
                     
                   
                   <a href="https://github.com/lzhp" title="GitHub &rarr; https://github.com/lzhp" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="mailto:lizhipeng@gmail.com" title="E-Mail &rarr; mailto:lizhipeng@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://weibo.com/lzhpeng" title="Weibo &rarr; https://weibo.com/lzhpeng" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://stackoverflow.com/users/1415511" title="StackOverflow &rarr; https://stackoverflow.com/users/1415511" rel="noopener" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
                 </span>
               
             </div>
@@ -695,23 +651,24 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
           
 
         </div>
-      </section>
+      </div>
 
       
       <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
 
             
-              
+            
+            
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo入门"><span class="nav-number">1.</span> <span class="nav-text"> hexo入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#quick-start"><span class="nav-number">1.1.</span> <span class="nav-text"> Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#create-a-new-post"><span class="nav-number">1.1.1.</span> <span class="nav-text"> Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#run-server"><span class="nav-number">1.1.2.</span> <span class="nav-text"> Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#generate-static-files"><span class="nav-number">1.1.3.</span> <span class="nav-text"> Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#deploy-to-remote-sites"><span class="nav-number">1.1.4.</span> <span class="nav-text"> Deploy to remote sites</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引入next主题"><span class="nav-number">2.</span> <span class="nav-text"> 引入Next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改next的设置"><span class="nav-number">2.1.</span> <span class="nav-text"> 修改next的设置</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo入门"><span class="nav-number">1.</span> <span class="nav-text">hexo入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引入Next主题"><span class="nav-number">2.</span> <span class="nav-text">引入Next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改next的设置"><span class="nav-number">2.1.</span> <span class="nav-text">修改next的设置</span></a></li></ol></li></ol></div>
             
 
           </div>
-        </section>
+        </div>
       <!--/noindex-->
       
 
@@ -719,6 +676,7 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
 
     </div>
   </aside>
+  
 
 
         
@@ -752,7 +710,7 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">2 分钟</span>
   
 </div>
 
@@ -765,7 +723,7 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
 
 
 
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v6.5.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.1.2</div>
 
 
 
@@ -791,7 +749,7 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
     
 
     
-	
+
     
 
     
@@ -799,7 +757,7 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -831,27 +789,21 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
 
 
   
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=6.5.0"></script>
+  <script src="/js/utils.js?v=7.1.2"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=6.5.0"></script>
+  <script src="/js/motion.js?v=7.1.2"></script>
 
 
 
@@ -859,43 +811,77 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=6.5.0"></script>
+  <script src="/js/affix.js?v=7.1.2"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.5.0"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
 
 
 
   
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.5.0"></script>
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
 
 
 
   
 
 
-
-  
-
-
-
-
-
-
-
-
+  <script src="/js/next-boot.js?v=7.1.2"></script>
 
 
   
 
-  <script type="text/javascript">
+  
+
+  
+
+  
+  
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://lzhp.github.io/2019/01/24/hexo-starter/";
+    this.page.identifier = "2019/01/24/hexo-starter/";
+    this.page.title = 'hexo入门';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://lizhipeng.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
+  
+</script>
+
+
+
+
+
+  
+
+
+  
+  <script>
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -981,7 +967,7 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
                 var content = data.content.trim().replace(/<[^>]+>/g,"");
                 
                 var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
                 var indexOfTitle = [];
                 var indexOfContent = [];
                 // only match articles with not empty titles
@@ -1150,9 +1136,9 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
               })
             };
             if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
             } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
             } else {
               resultItems.sort(function (resultLeft, resultRight) {
                 if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
@@ -1230,14 +1216,8 @@ Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html"
   
 
   
-  
-  
-  <script src="/lib/needsharebutton/needsharebutton.js"></script>
 
-  <script>
-    
-    
-  </script>
+  
 
   
 
