@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[科学上网]]></title>
+    <url>%2F2019%2F06%2F05%2Fcross-wall%2F</url>
+    <content type="text"><![CDATA[科学上网 经常上网查些资料，包括google、github、stackoverflow等等，但是有的时候会突然访问不了，影响使用。为了提高工作效率，只能想各种方法正常访问这些网站，以下两种是我用过的方式。 自己搭建$$服务 在https://bandwagonhost.com买了一个vps服务器，有各种规格的，我买的是一个1c256M内存的虚拟机，$19.9/year，买完后可以一键安装SS服务端，就可以使用了，用起来其实也还算平稳，日常查资料足够了。续费了好几年了，无奈虚拟机ip有时会无缘无故访问不到，网站原来每年可以有一次免费更换ip的服务，可能是换的人太多了，这项服务没有了。这不前几天又突然用不了了，只能另想办法。 直接购买$$服务 国内很多用户购买bandwagonhost主机的唯一用途就是搭建$$服务，这个网站瞅准这个需求，直接推出了搭建好的$$服务,地址https://justmysocks.net/，相比自行搭建，直接购买服务更直接，还有两个优势，一是在服务期内保证服务，不需担心IP不能访问的问题，由服务商自动处理不能访问的IP；二是访问速度做了优化，对中国大陆用户更加友好。第一个方案的IP不能访问后，直接买了一个最便宜的，$28.88/year，会提供5个域名，支持3个设备，每月100G流量，查资料足够了。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo入门]]></title>
+    <url>%2F2019%2F01%2F24%2Fhexo-starter%2F</url>
+    <content type="text"><![CDATA[hexo入门 blog Quick Start Create a new post 1$ hexo new "My New Post" More info: Writing Run server 1$ hexo server More info: Server Generate static files 1$ hexo generate More info: Generating Deploy to remote sites 1$ hexo deploy 引入Next主题 ##下载及使用 Next使用说明：https://theme-next.iissnan.com/getting-started.html 修改next的设置 项目的配置文件位置：source\_data\next.yml，会覆盖theme\Next目录下的配置文件 More info: Deployment]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[折腾博客]]></title>
     <url>%2F2018%2F11%2F15%2Fmy-first%2F</url>
     <content type="text"><![CDATA[开头 折腾很多次博客了，再折腾一次]]></content>
