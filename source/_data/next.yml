@@ -607,7 +607,7 @@ calendar:
 disqus:
   enable: true
   shortname: lizhipeng
-  count: false
+  count: true
   lazyload: true
 
 # DisqusJS
