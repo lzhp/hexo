@@ -31,9 +31,11 @@ tags:
 6. 开始编写博客
 
    - 写新文章
+
      ```bash
      hexo new "My New Post"
      ```
+
    - 调试预览
 
      ```bash
