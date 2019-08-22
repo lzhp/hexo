@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lzhp.github.io/"/>
-  <updated>2019-08-22T14:03:24.669Z</updated>
+  <updated>2019-08-22T14:31:54.246Z</updated>
   <id>http://lzhp.github.io/</id>
   
   <author>
@@ -17,22 +17,22 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Install Eclipse(STS)</title>
+    <title>安全Eclipse(STS)</title>
     <link href="http://lzhp.github.io/2019/08/22/Install-Eclipse-STS/"/>
     <id>http://lzhp.github.io/2019/08/22/Install-Eclipse-STS/</id>
     <published>2019-08-22T13:08:55.000Z</published>
-    <updated>2019-08-22T14:03:24.669Z</updated>
+    <updated>2019-08-22T14:31:54.246Z</updated>
     
-    <content type="html"><![CDATA[<p>每次重新安装Eclipse（STS）都是非常痛苦，每次都有一些必须的安装内容，记录一下，备忘。</p><p>本次安装，基于STS4.4.2版，2019年8月底。</p><ol><li>到官方网站下载zip版本的STS文件，官方地址：<br>STS：<a href="https://spring.io/tools" target="_blank" rel="noopener">https://spring.io/tools</a><br>Eclipse：<a href="https://www.eclipse.org/downloads/" target="_blank" rel="noopener">https://www.eclipse.org/downloads/</a></li><li>解压，先不着急启动</li><li>安装lombok插件，直接双击lombok.jar，选择已经解压的目录即可</li><li>打开解压目录下的SpringToolSuite4.ini文件，去掉lombok的绝对路径，改为相对路径<img src="/2019/08/22/Install-Eclipse-STS/utf8.png"></li><li>修改默认为utf-8编码，在SpringToolSuite4.ini 文件的最下面加入一行代码:-Dfile.encoding=UTF-8，如上图</li><li>安装google style插件，从<a href="https://github.com/google/google-java-format#eclipse" target="_blank" rel="noopener">https://github.com/google/google-java-format#eclipse</a>下载google-java-format-eclipse-plugin_1.6.0.jar，放到”dropins”目录</li><li>启动Eclipse（STS）</li><li>依次安装常用的插件：<ol><li>反编译，Enhanced Class Decompiler</li><li>代码静态扫描，sonarlint</li><li>阿里规约扫描 <a href="https://p3c.alibaba.com/plugin/eclipse/update" target="_blank" rel="noopener">https://p3c.alibaba.com/plugin/eclipse/update</a></li><li>可选，如果需要安装Flowable，安装flowable designer：<a href="http://flowable.org/designer/update" target="_blank" rel="noopener">http://flowable.org/designer/update</a></li></ol></li><li>进入“Window &gt; Preferences &gt; Java &gt; Code Style &gt; Formatter &gt; Formatter Implementation”，选择google formatter，见下图<img src="/2019/08/22/Install-Eclipse-STS/formatter.png"></li><li>为解决中英文字体大小不一致，依次“Window &gt; Preferences &gt; General &gt; Appearance &gt; Corlor and Fonts &gt; Text Font”，调整字体大小为五号或者小五<img src="/2019/08/22/Install-Eclipse-STS/font.png"></li></ol>]]></content>
+    <content type="html"><![CDATA[<p>每次重新安装Eclipse（STS）都是非常痛苦，每次都有一些必须的安装内容，记录一下，备忘。</p><p>本次安装，基于STS4.4.2版，2019年8月底。<br>JDK已经安装好的情况下。</p><ol><li>到官方网站下载zip版本的STS文件，官方地址：<br>STS：<a href="https://spring.io/tools" target="_blank" rel="noopener">https://spring.io/tools</a><br>Eclipse：<a href="https://www.eclipse.org/downloads/" target="_blank" rel="noopener">https://www.eclipse.org/downloads/</a></li><li>解压，先不着急启动</li><li>安装lombok插件，直接双击lombok.jar，选择已经解压的目录即可</li><li>打开解压目录下的SpringToolSuite4.ini文件，去掉lombok的绝对路径，改为相对路径<img src="/2019/08/22/Install-Eclipse-STS/utf8.png"></li><li>修改默认为utf-8编码，在SpringToolSuite4.ini 文件的最下面加入一行代码:-Dfile.encoding=UTF-8，如上图</li><li>安装google style插件，从<a href="https://github.com/google/google-java-format#eclipse" target="_blank" rel="noopener">https://github.com/google/google-java-format#eclipse</a>下载google-java-format-eclipse-plugin_1.6.0.jar，放到”dropins”目录</li><li>启动Eclipse（STS）</li><li>依次安装常用的插件：<ol><li>反编译，Enhanced Class Decompiler</li><li>代码静态扫描，sonarlint</li><li>阿里规约扫描 <a href="https://p3c.alibaba.com/plugin/eclipse/update" target="_blank" rel="noopener">https://p3c.alibaba.com/plugin/eclipse/update</a></li><li>可选，如果需要安装Flowable，安装flowable designer：<a href="http://flowable.org/designer/update" target="_blank" rel="noopener">http://flowable.org/designer/update</a></li></ol></li><li>进入“Window &gt; Preferences &gt; Java &gt; Code Style &gt; Formatter &gt; Formatter Implementation”，选择google formatter，见下图<img src="/2019/08/22/Install-Eclipse-STS/formatter.png"></li><li>为解决中英文字体大小不一致，依次“Window &gt; Preferences &gt; General &gt; Appearance &gt; Corlor and Fonts &gt; Text Font”，调整字体大小为五号或者小五<img src="/2019/08/22/Install-Eclipse-STS/font.png"></li></ol>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;每次重新安装Eclipse（STS）都是非常痛苦，每次都有一些必须的安装内容，记录一下，备忘。&lt;/p&gt;
-&lt;p&gt;本次安装，基于STS4.4.2版，2019年8月底。&lt;/p&gt;
+&lt;p&gt;本次安装，基于STS4.4.2版，2019年8月底。&lt;br&gt;JDK已经安装好的情况下。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;到官方网站下载zip版本的STS文件，官方地址：&lt;br&gt;STS：&lt;a href=&quot;h
+&lt;li&gt;到官方网站下载zip版本的STS文件，官方地址：&lt;
       
     
     </summary>
@@ -45,7 +45,7 @@
     <link href="http://lzhp.github.io/2019/06/05/cross-wall/"/>
     <id>http://lzhp.github.io/2019/06/05/cross-wall/</id>
     <published>2019-06-05T15:40:52.000Z</published>
-    <updated>2019-08-22T14:16:37.464Z</updated>
+    <updated>2019-08-22T14:19:27.576Z</updated>
     
     <content type="html"><![CDATA[<p>经常上网查些资料，包括google、github、stackoverflow等等，但是有的时候会突然访问不了，影响使用。为了提高工作效率，只能想各种方法正常访问这些网站，以下两种是我用过的方式。</p><h2 id="自己搭建-服务"><a href="#自己搭建-服务" class="headerlink" title="自己搭建$$服务"></a>自己搭建$$服务</h2><p>在<a href="https://bandwagonhost.com/aff.php?aff=9676" target="_blank" rel="noopener">https://bandwagonhost.com</a>买了一个vps服务器，有各种规格的，我买的是一个1c256M内存的虚拟机，$19.9/year，买完后可以一键安装SS服务端，就可以使用了，用起来其实也还算平稳，日常查资料足够了。续费了好几年了，无奈虚拟机ip有时会无缘无故访问不到，网站原来每年可以有一次免费更换ip的服务，可能是换的人太多了，这项服务没有了。这不前几天又突然用不了了，只能另想办法。</p><h2 id="直接购买-服务"><a href="#直接购买-服务" class="headerlink" title="直接购买$$服务"></a>直接购买$$服务</h2><p>国内很多用户购买bandwagonhost主机的唯一用途就是搭建$$服务，这个网站瞅准这个需求，直接推出了搭建好的$$服务,地址<a href="https://justmysocks.net/members/aff.php?aff=1850" target="_blank" rel="noopener">https://justmysocks.net/</a>，相比自行搭建，直接购买服务更直接，还有两个优势，一是在服务期内保证服务，不需担心IP不能访问的问题，由服务商自动处理不能访问的IP；二是访问速度做了优化，对中国大陆用户更加友好。第一个方案的IP不能访问后，直接买了一个最便宜的，$28.88/year，会提供5个域名，支持3个设备，每月100G流量，查资料足够了。</p>]]></content>
     
@@ -90,7 +90,7 @@
     <link href="http://lzhp.github.io/2018/11/15/my-first/"/>
     <id>http://lzhp.github.io/2018/11/15/my-first/</id>
     <published>2018-11-15T13:48:10.000Z</published>
-    <updated>2019-08-22T14:15:58.403Z</updated>
+    <updated>2019-08-22T14:19:21.467Z</updated>
     
     <content type="html"><![CDATA[<h2 id="开头"><a href="#开头" class="headerlink" title="开头"></a>开头</h2><p>折腾很多次博客了，再折腾一次</p>]]></content>
     

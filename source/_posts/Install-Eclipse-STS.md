@@ -1,5 +1,5 @@
 ---
-title: Install Eclipse(STS)
+title: 安装Eclipse(STS)
 date: 2019-08-22 21:08:55
 categories:
 tags:
@@ -8,6 +8,7 @@ tags:
 每次重新安装Eclipse（STS）都是非常痛苦，每次都有一些必须的安装内容，记录一下，备忘。
 
 本次安装，基于STS4.4.2版，2019年8月底。
+JDK已经安装好的情况下。
 
 1. 到官方网站下载zip版本的STS文件，官方地址：
    STS：<https://spring.io/tools>
