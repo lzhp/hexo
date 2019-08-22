@@ -45,15 +45,16 @@
     <link href="http://lzhp.github.io/2019/06/05/cross-wall/"/>
     <id>http://lzhp.github.io/2019/06/05/cross-wall/</id>
     <published>2019-06-05T15:40:52.000Z</published>
-    <updated>2019-06-05T16:07:48.570Z</updated>
+    <updated>2019-08-22T14:16:37.464Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h1><p>经常上网查些资料，包括google、github、stackoverflow等等，但是有的时候会突然访问不了，影响使用。为了提高工作效率，只能想各种方法正常访问这些网站，以下两种是我用过的方式。</p><h2 id="自己搭建-服务"><a href="#自己搭建-服务" class="headerlink" title="自己搭建$$服务"></a>自己搭建$$服务</h2><p>在<a href="https://bandwagonhost.com/aff.php?aff=9676" target="_blank" rel="noopener">https://bandwagonhost.com</a>买了一个vps服务器，有各种规格的，我买的是一个1c256M内存的虚拟机，$19.9/year，买完后可以一键安装SS服务端，就可以使用了，用起来其实也还算平稳，日常查资料足够了。续费了好几年了，无奈虚拟机ip有时会无缘无故访问不到，网站原来每年可以有一次免费更换ip的服务，可能是换的人太多了，这项服务没有了。这不前几天又突然用不了了，只能另想办法。</p><h2 id="直接购买-服务"><a href="#直接购买-服务" class="headerlink" title="直接购买$$服务"></a>直接购买$$服务</h2><p>国内很多用户购买bandwagonhost主机的唯一用途就是搭建$$服务，这个网站瞅准这个需求，直接推出了搭建好的$$服务,地址<a href="https://justmysocks.net/members/aff.php?aff=1850" target="_blank" rel="noopener">https://justmysocks.net/</a>，相比自行搭建，直接购买服务更直接，还有两个优势，一是在服务期内保证服务，不需担心IP不能访问的问题，由服务商自动处理不能访问的IP；二是访问速度做了优化，对中国大陆用户更加友好。第一个方案的IP不能访问后，直接买了一个最便宜的，$28.88/year，会提供5个域名，支持3个设备，每月100G流量，查资料足够了。</p>]]></content>
+    <content type="html"><![CDATA[<p>经常上网查些资料，包括google、github、stackoverflow等等，但是有的时候会突然访问不了，影响使用。为了提高工作效率，只能想各种方法正常访问这些网站，以下两种是我用过的方式。</p><h2 id="自己搭建-服务"><a href="#自己搭建-服务" class="headerlink" title="自己搭建$$服务"></a>自己搭建$$服务</h2><p>在<a href="https://bandwagonhost.com/aff.php?aff=9676" target="_blank" rel="noopener">https://bandwagonhost.com</a>买了一个vps服务器，有各种规格的，我买的是一个1c256M内存的虚拟机，$19.9/year，买完后可以一键安装SS服务端，就可以使用了，用起来其实也还算平稳，日常查资料足够了。续费了好几年了，无奈虚拟机ip有时会无缘无故访问不到，网站原来每年可以有一次免费更换ip的服务，可能是换的人太多了，这项服务没有了。这不前几天又突然用不了了，只能另想办法。</p><h2 id="直接购买-服务"><a href="#直接购买-服务" class="headerlink" title="直接购买$$服务"></a>直接购买$$服务</h2><p>国内很多用户购买bandwagonhost主机的唯一用途就是搭建$$服务，这个网站瞅准这个需求，直接推出了搭建好的$$服务,地址<a href="https://justmysocks.net/members/aff.php?aff=1850" target="_blank" rel="noopener">https://justmysocks.net/</a>，相比自行搭建，直接购买服务更直接，还有两个优势，一是在服务期内保证服务，不需担心IP不能访问的问题，由服务商自动处理不能访问的IP；二是访问速度做了优化，对中国大陆用户更加友好。第一个方案的IP不能访问后，直接买了一个最便宜的，$28.88/year，会提供5个域名，支持3个设备，每月100G流量，查资料足够了。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;科学上网&quot;&gt;&lt;a href=&quot;#科学上网&quot; class=&quot;headerlink&quot; title=&quot;科学上网&quot;&gt;&lt;/a&gt;科学上网&lt;/h1&gt;&lt;p&gt;经常上网查些资料，包括google、github、stackoverflow等等，但是有的时候会突然访问不了，影响使用。为了
+        &lt;p&gt;经常上网查些资料，包括google、github、stackoverflow等等，但是有的时候会突然访问不了，影响使用。为了提高工作效率，只能想各种方法正常访问这些网站，以下两种是我用过的方式。&lt;/p&gt;
+&lt;h2 id=&quot;自己搭建-服务&quot;&gt;&lt;a href=&quot;#自己搭建-服务&quot;
       
     
     </summary>
@@ -66,16 +67,17 @@
     <link href="http://lzhp.github.io/2019/01/24/hexo-starter/"/>
     <id>http://lzhp.github.io/2019/01/24/hexo-starter/</id>
     <published>2019-01-24T02:32:18.000Z</published>
-    <updated>2019-01-24T02:46:15.397Z</updated>
+    <updated>2019-08-22T14:16:18.540Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="hexo入门"><a href="#hexo入门" class="headerlink" title="hexo入门"></a>hexo入门</h1><p>blog</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><h1 id="引入Next主题"><a href="#引入Next主题" class="headerlink" title="引入Next主题"></a>引入Next主题</h1><p>##下载及使用<br>Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">https://theme-next.iissnan.com/getting-started.html</a></p><h2 id="修改next的设置"><a href="#修改next的设置" class="headerlink" title="修改next的设置"></a>修改next的设置</h2><p>项目的配置文件位置：<code>source\_data\next.yml</code>，会覆盖<code>theme\Next</code>目录下的配置文件</p><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>hexo入门</p><p>blog</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><h2 id="引入Next主题"><a href="#引入Next主题" class="headerlink" title="引入Next主题"></a>引入Next主题</h2><h3 id="下载及使用"><a href="#下载及使用" class="headerlink" title="下载及使用"></a>下载及使用</h3><p>Next使用说明：<a href="https://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">https://theme-next.iissnan.com/getting-started.html</a></p><h3 id="修改next的设置"><a href="#修改next的设置" class="headerlink" title="修改next的设置"></a>修改next的设置</h3><p>项目的配置文件位置：<code>source\_data\next.yml</code>，会覆盖<code>theme\Next</code>目录下的配置文件</p><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;hexo入门&quot;&gt;&lt;a href=&quot;#hexo入门&quot; class=&quot;headerlink&quot; title=&quot;hexo入门&quot;&gt;&lt;/a&gt;hexo入门&lt;/h1&gt;&lt;p&gt;blog&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; c
+        &lt;p&gt;hexo入门&lt;/p&gt;
+&lt;p&gt;blog&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Cre
       
     
     </summary>
@@ -88,15 +90,15 @@
     <link href="http://lzhp.github.io/2018/11/15/my-first/"/>
     <id>http://lzhp.github.io/2018/11/15/my-first/</id>
     <published>2018-11-15T13:48:10.000Z</published>
-    <updated>2018-11-18T14:53:12.769Z</updated>
+    <updated>2019-08-22T14:15:58.403Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="开头"><a href="#开头" class="headerlink" title="开头"></a>开头</h1><p>折腾很多次博客了，再折腾一次</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="开头"><a href="#开头" class="headerlink" title="开头"></a>开头</h2><p>折腾很多次博客了，再折腾一次</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;开头&quot;&gt;&lt;a href=&quot;#开头&quot; class=&quot;headerlink&quot; title=&quot;开头&quot;&gt;&lt;/a&gt;开头&lt;/h1&gt;&lt;p&gt;折腾很多次博客了，再折腾一次&lt;/p&gt;
+        &lt;h2 id=&quot;开头&quot;&gt;&lt;a href=&quot;#开头&quot; class=&quot;headerlink&quot; title=&quot;开头&quot;&gt;&lt;/a&gt;开头&lt;/h2&gt;&lt;p&gt;折腾很多次博客了，再折腾一次&lt;/p&gt;
 
       
     
