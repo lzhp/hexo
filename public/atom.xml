@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lzhp.github.io/"/>
-  <updated>2019-08-22T14:31:54.246Z</updated>
+  <updated>2019-08-22T14:32:52.968Z</updated>
   <id>http://lzhp.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>安全Eclipse(STS)</title>
+    <title>安装Eclipse(STS)</title>
     <link href="http://lzhp.github.io/2019/08/22/Install-Eclipse-STS/"/>
     <id>http://lzhp.github.io/2019/08/22/Install-Eclipse-STS/</id>
     <published>2019-08-22T13:08:55.000Z</published>
-    <updated>2019-08-22T14:31:54.246Z</updated>
+    <updated>2019-08-22T14:32:52.968Z</updated>
     
     <content type="html"><![CDATA[<p>每次重新安装Eclipse（STS）都是非常痛苦，每次都有一些必须的安装内容，记录一下，备忘。</p><p>本次安装，基于STS4.4.2版，2019年8月底。<br>JDK已经安装好的情况下。</p><ol><li>到官方网站下载zip版本的STS文件，官方地址：<br>STS：<a href="https://spring.io/tools" target="_blank" rel="noopener">https://spring.io/tools</a><br>Eclipse：<a href="https://www.eclipse.org/downloads/" target="_blank" rel="noopener">https://www.eclipse.org/downloads/</a></li><li>解压，先不着急启动</li><li>安装lombok插件，直接双击lombok.jar，选择已经解压的目录即可</li><li>打开解压目录下的SpringToolSuite4.ini文件，去掉lombok的绝对路径，改为相对路径<img src="/2019/08/22/Install-Eclipse-STS/utf8.png"></li><li>修改默认为utf-8编码，在SpringToolSuite4.ini 文件的最下面加入一行代码:-Dfile.encoding=UTF-8，如上图</li><li>安装google style插件，从<a href="https://github.com/google/google-java-format#eclipse" target="_blank" rel="noopener">https://github.com/google/google-java-format#eclipse</a>下载google-java-format-eclipse-plugin_1.6.0.jar，放到”dropins”目录</li><li>启动Eclipse（STS）</li><li>依次安装常用的插件：<ol><li>反编译，Enhanced Class Decompiler</li><li>代码静态扫描，sonarlint</li><li>阿里规约扫描 <a href="https://p3c.alibaba.com/plugin/eclipse/update" target="_blank" rel="noopener">https://p3c.alibaba.com/plugin/eclipse/update</a></li><li>可选，如果需要安装Flowable，安装flowable designer：<a href="http://flowable.org/designer/update" target="_blank" rel="noopener">http://flowable.org/designer/update</a></li></ol></li><li>进入“Window &gt; Preferences &gt; Java &gt; Code Style &gt; Formatter &gt; Formatter Implementation”，选择google formatter，见下图<img src="/2019/08/22/Install-Eclipse-STS/formatter.png"></li><li>为解决中英文字体大小不一致，依次“Window &gt; Preferences &gt; General &gt; Appearance &gt; Corlor and Fonts &gt; Text Font”，调整字体大小为五号或者小五<img src="/2019/08/22/Install-Eclipse-STS/font.png"></li></ol>]]></content>
     
