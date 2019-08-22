@@ -5,7 +5,7 @@
 # Site
 title: 不惑之技
 subtitle: 不惑，技术流，记录感悟
-description: 
+description:
 keywords: spring cloud, micro service
 author: lizhipeng@gmail.com
 language: zh-CN
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -43,16 +43,16 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -81,7 +81,7 @@ symbols_count_time:
   time: true
   total_symbols: true
   total_time: true
-  
+
 markdown_it_plus:
   highlight: true
   html: true
@@ -92,13 +92,12 @@ markdown_it_plus:
   typographer:
   quotes: “”‘’
   pre_class: highlight
-  
+
 toc:
   maxDepth: 3
-  
+
 motion:
   enable: false
-
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

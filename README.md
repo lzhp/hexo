@@ -1,13 +1,13 @@
 # lzhp.github.io
-blog
 
+blog
 
 ## Quick Start
 
 ### Create a new post
 
 ``` bash
-$ hexo new "My New Post"
+ hexo new "My New Post"
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
@@ -15,7 +15,7 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 ### Run server
 
 ``` bash
-$ hexo server
+ hexo server
 ```
 
 More info: [Server](https://hexo.io/docs/server.html)
@@ -23,7 +23,7 @@ More info: [Server](https://hexo.io/docs/server.html)
 ### Generate static files
 
 ``` bash
-$ hexo generate
+ hexo generate
 ```
 
 More info: [Generating](https://hexo.io/docs/generating.html)
@@ -31,15 +31,17 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 ### Deploy to remote sites
 
 ``` bash
-$ hexo deploy
+ hexo deploy
 ```
 
-# ÒıÈëNextÖ÷Ìâ
-##ÏÂÔØ¼°Ê¹ÓÃ
-NextÊ¹ÓÃËµÃ÷£ºhttps://theme-next.iissnan.com/getting-started.html
+## å¼•å…¥Nextä¸»é¢˜
 
-## ĞŞ¸ÄnextµÄÉèÖÃ
-ÏîÄ¿µÄÅäÖÃÎÄ¼şÎ»ÖÃ£º`source\_data\next.yml`£¬»á¸²¸Ç`theme\Next`Ä¿Â¼ÏÂµÄÅäÖÃÎÄ¼ş
+### ä¸‹è½½åŠä½¿ç”¨
 
+Nextä½¿ç”¨è¯´æ˜ï¼šhttps://theme-next.iissnan.com/getting-started.html
+
+### ä¿®æ”¹nextçš„è®¾ç½®
+
+é¡¹ç›®çš„é…ç½®æ–‡ä»¶ä½ç½®ï¼š`source\_data\next.yml`ï¼Œä¼šè¦†ç›–`theme\Next`ç›®å½•ä¸‹çš„é…ç½®æ–‡ä»¶
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Install Eclipse(STS)]]></title>
+    <url>%2F2019%2F08%2F22%2FInstall-Eclipse-STS%2F</url>
+    <content type="text"><![CDATA[每次重新安装Eclipse（STS）都是非常痛苦，每次都有一些必须的安装内容，记录一下，备忘。 本次安装，基于STS4.4.2版，2019年8月底。 到官方网站下载zip版本的STS文件，官方地址：STS：https://spring.io/toolsEclipse：https://www.eclipse.org/downloads/ 解压，先不着急启动 安装lombok插件，直接双击lombok.jar，选择已经解压的目录即可 打开解压目录下的SpringToolSuite4.ini文件，去掉lombok的绝对路径，改为相对路径 修改默认为utf-8编码，在SpringToolSuite4.ini 文件的最下面加入一行代码:-Dfile.encoding=UTF-8，如上图 安装google style插件，从https://github.com/google/google-java-format#eclipse下载google-java-format-eclipse-plugin_1.6.0.jar，放到”dropins”目录 启动Eclipse（STS） 依次安装常用的插件： 反编译，Enhanced Class Decompiler 代码静态扫描，sonarlint 阿里规约扫描 https://p3c.alibaba.com/plugin/eclipse/update 可选，如果需要安装Flowable，安装flowable designer：http://flowable.org/designer/update 进入“Window &gt; Preferences &gt; Java &gt; Code Style &gt; Formatter &gt; Formatter Implementation”，选择google formatter，见下图 为解决中英文字体大小不一致，依次“Window &gt; Preferences &gt; General &gt; Appearance &gt; Corlor and Fonts &gt; Text Font”，调整字体大小为五号或者小五]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[科学上网]]></title>
     <url>%2F2019%2F06%2F05%2Fcross-wall%2F</url>
     <content type="text"><![CDATA[科学上网经常上网查些资料，包括google、github、stackoverflow等等，但是有的时候会突然访问不了，影响使用。为了提高工作效率，只能想各种方法正常访问这些网站，以下两种是我用过的方式。 自己搭建$$服务在https://bandwagonhost.com买了一个vps服务器，有各种规格的，我买的是一个1c256M内存的虚拟机，$19.9/year，买完后可以一键安装SS服务端，就可以使用了，用起来其实也还算平稳，日常查资料足够了。续费了好几年了，无奈虚拟机ip有时会无缘无故访问不到，网站原来每年可以有一次免费更换ip的服务，可能是换的人太多了，这项服务没有了。这不前几天又突然用不了了，只能另想办法。 直接购买$$服务国内很多用户购买bandwagonhost主机的唯一用途就是搭建$$服务，这个网站瞅准这个需求，直接推出了搭建好的$$服务,地址https://justmysocks.net/，相比自行搭建，直接购买服务更直接，还有两个优势，一是在服务期内保证服务，不需担心IP不能访问的问题，由服务商自动处理不能访问的IP；二是访问速度做了优化，对中国大陆用户更加友好。第一个方案的IP不能访问后，直接买了一个最便宜的，$28.88/year，会提供5个域名，支持3个设备，每月100G流量，查资料足够了。]]></content>
