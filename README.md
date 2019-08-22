@@ -38,7 +38,7 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 
 ### 下载及使用
 
-Next使用说明：https://theme-next.iissnan.com/getting-started.html
+Next使用说明：<https://theme-next.iissnan.com/getting-started.html>
 
 ### 修改next的设置
 
