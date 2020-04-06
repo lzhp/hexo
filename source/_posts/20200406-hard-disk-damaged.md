@@ -1,5 +1,5 @@
 ---
-title: fix hard disk
+title: 硬盘损坏
 date: 2020-04-06 22:20:07
 categories:
 tags:
