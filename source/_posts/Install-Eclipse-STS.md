@@ -3,6 +3,7 @@ title: 安装Eclipse(STS)
 date: 2019-08-22 21:08:55
 categories:
 tags:
+  - 开发技术
 ---
 
 每次重新安装 Eclipse（STS）都是非常痛苦，每次都有一些必须的安装内容，记录一下，备忘。
