@@ -7,27 +7,31 @@
 # If true, will fully override default configuration by options from `_data/next.yml` (override). Only for NexT settings.
 # And if true, all config from default NexT `_config.yml` must be copied into `next.yml`. Use if you know what you are doing.
 # Useful if you want to comment some options from NexT `_config.yml` by `next.yml` without editing default config.
-override: true
+override: false
+
+# Console reminder if new version released.
+reminder: false
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
 cache:
   enable: true
 
-# Redefine custom file paths. Introduced in NexT v6.0.2. If commented, will be used default custom file paths.
-# For example, you want to put your custom styles file outside theme directory in root `source/_data`, set `styles: source/_data/styles.styl`
-#custom_file_path:
-# Default paths: layout/_custom/*
-#head: source/_data/head.swig
-#header: source/_data/header.swig
-#sidebar: source/_data/sidebar.swig
+# Remove unnecessary files after hexo generate.
+minify: false
 
-# Default path: source/css/_variables/custom.styl
-#variables: source/_data/variables.styl
-# Default path: source/css/_mixins/custom.styl
-#mixins: source/_data/mixins.styl
-# Default path: source/css/_custom/custom.styl
-#styles: source/_data/styles.styl
-
+# Define custom file paths.
+# Create your custom files in site directory `source/_data` and uncomment needed files below.
+custom_file_path:
+  #head: source/_data/head.swig
+  #header: source/_data/header.swig
+  #sidebar: source/_data/sidebar.swig
+  #postMeta: source/_data/post-meta.swig
+  #postBodyEnd: source/_data/post-body-end.swig
+  #footer: source/_data/footer.swig
+  #bodyEnd: source/_data/body-end.swig
+  #variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  #style: source/_data/styles.styl                           
 # ---------------------------------------------------------------
 # Site Information Settings
 # See: https://theme-next.org/docs/getting-started/
@@ -41,10 +45,7 @@ favicon:
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
-# Set rss to false to disable feed link.
-# Leave rss as blank to use site's feed link, and install dependencies hexo-generator-feed by `npm install hexo-generator-feed --save`.
-# Set rss to specific value if you have burned your feed already.
-rss:
+
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
@@ -81,9 +82,6 @@ footer:
     enable: false
     icp:
 
-  # Any custom text can be defined here.
-  #custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
-
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/share-your-work/licensing-types-examples
 # Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
@@ -96,52 +94,11 @@ creative_commons:
   post: false
   language:
 
-# `Follow me on GitHub` banner in the top-right corner.
-github_banner:
-  enable: false
-  permalink: https://github.com/yourname
-  title: Follow me on GitHub
-
 # ---------------------------------------------------------------
 # SEO Settings
 # ---------------------------------------------------------------
 
-# Disable Baidu transformation on mobile devices.
-disable_baidu_transformation: false
 
-# Set a canonical link tag in your hexo, you could use it for your SEO of blog.
-# See: https://support.google.com/webmasters/answer/139066
-# Tips: Before you open this tag, remember set up your URL in hexo _config.yml (e.g. url: http://yourdomain.com)
-canonical: true
-
-# Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
-seo: false
-
-# If true, will add site-subtitle to index page, added in main hexo config.
-# subtitle: Subtitle
-index_with_subtitle: false
-
-# Automatically add external URL with BASE64 encrypt & decrypt.
-exturl: false
-
-# Google Webmaster tools verification.
-# See: https://www.google.com/webmasters
-#google_site_verification:
-
-# Bing Webmaster tools verification.
-# See: https://www.bing.com/webmaster
-#bing_site_verification:
-
-# Yandex Webmaster tools verification.
-# See: https://webmaster.yandex.ru
-#yandex_site_verification:
-
-# Baidu Webmaster tools verification.
-# See: https://ziyuan.baidu.com/site
-#baidu_site_verification:
-
-# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -225,8 +182,6 @@ avatar:
   url: #/images/avatar.gif
   # If true, the avatar would be dispalyed in circle.
   rounded: false
-  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
-  opacity: 1
   # If true, the avatar would be rotated with the cursor.
   rotated: false
 
@@ -287,12 +242,6 @@ chat:
 # See: https://theme-next.org/docs/theme-settings/posts
 # ---------------------------------------------------------------
 
-# Set the text alignment in the posts.
-text_align:
-  # Available values: start | end | left | right | center | justify | justify-all | match-parent
-  desktop: justify
-  mobile: justify
-
 # Automatically scroll page to section which is under <!-- more --> mark.
 scroll_to_more: true
 
@@ -329,17 +278,6 @@ symbols_count_time:
   item_text_total: true
   awl: 2
   wpm: 275
-
-codeblock:
-  # Manual define the border radius in codeblock, leave it blank for the default value: 1
-  border_radius:
-  # Add copy button on codeblock
-  copy_button:
-    enable: false
-    # Show text copy result
-    show_result: false
-    # Style: only 'flat' is currently available, leave it blank if you prefer default theme
-    style:
 
 # Use icon instead of the symblo # to indicate the tag at the bottom of the post
 tag_icon: false
@@ -387,6 +325,11 @@ post_edit:
 # Misc Theme Settings
 # ---------------------------------------------------------------
 
+# Set the text alignment in posts / pages.
+text_align:
+  # Available values: start | end | left | right | center | justify | justify-all | match-parent
+  desktop: justify
+  mobile: justify             
 # Reduce padding / margin indents on devices with narrow width.
 mobile_layout_economy: false
 
@@ -399,84 +342,26 @@ safari_rainbow: false
 # Optimize the display of scrollbars on webkit based browsers.
 custom_scrollbar: false
 
-# Custom Logo
-# Do not support Scheme Mist currently.
-custom_logo:
-  enable: false
-  image: #/uploads/custom-logo.jpg
+# Custom Logo (Do not support scheme Mist)
+            
+               
+custom_logo: #/uploads/custom-logo.jpg
 
-# Code Highlight theme
-# Available values: normal | night | night eighties | night blue | night bright
-# https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+codeblock:
+  # Code Highlight theme
+  # Available values: normal | night | night eighties | night blue | night bright
+  # See: https://github.com/chriskempson/tomorrow-theme
+  highlight_theme: normal
+  # Add copy button on codeblock
+  copy_button:
+    enable: false
+    # Show text copy result.
+    show_result: false
+    # Available values: default | flat | mac
+    style:                                 
 
-# Enable "cheers" for archive page.
-cheers: true
 
-# TagCloud settings for tags page.
-tagcloud:
-  # If true, font size, font color and amount of tags can be customized
-  enable: false
-  # All values below are same as default, change them by yourself
-  min: 12 # min font size in px
-  max: 30 # max font size in px
-  start: "#ccc" # start color (hex, rgba, hsla or color keywords)
-  end: "#111" # end color (hex, rgba, hsla or color keywords)
-  amount: 200 # amount of tags, change it if you have more than 200 tags
 
-# ---------------------------------------------------------------
-# Font Settings. Introduced in NexT v5.0.1.
-# Find fonts on Google Fonts (https://www.google.com/fonts)
-# All fonts set here will have the following styles:
-#   light, light italic, normal, normal italic, bold, bold italic
-# Be aware that setting too much fonts will cause site running slowly
-# ---------------------------------------------------------------
-# To avoid space between header and sidebar in scheme Pisces / Gemini, Web Safe fonts are recommended for `global` (and `logo`):
-# Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
-# ---------------------------------------------------------------
-
-font:
-  enable: false
-
-  # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
-  host:
-
-  # Font options:
-  # `external: true` will load this font family from `host` above.
-  # `family: Times New Roman`. Without any quotes.
-  # `size: xx`. Use `px` as unit.
-
-  # Global font settings used for all elements in <body>.
-  global:
-    external: true
-    family: Lato
-    size:
-
-  # Font settings for Headlines (H1, H2, H3, H4, H5, H6).
-  # Fallback to `global` font settings.
-  headings:
-    external: true
-    family:
-    size:
-
-  # Font settings for posts.
-  # Fallback to `global` font settings.
-  posts:
-    external: true
-    family:
-
-  # Font settings for Logo.
-  # Fallback to `global` font settings.
-  logo:
-    external: true
-    family:
-    size:
-
-  # Font settings for <code> and code blocks.
-  codes:
-    external: true
-    family:
-    size:
 
 # ---------------------------------------------------------------
 # Third Party Services Settings
@@ -518,9 +403,23 @@ math:
       copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js
       copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
 
-# Han Support
-# Dependencies: https://github.com/theme-next/theme-next-han
-han: false
+# Fancybox. There is support for old version 2 and new version 3.
+# Choose only one variant, do not need to install both.
+# To install 2.x: https://github.com/theme-next/theme-next-fancybox
+# To install 3.x: https://github.com/theme-next/theme-next-fancybox3
+# For more information: https://fancyapps.com/fancybox
+fancybox: false
+
+# A JavaScript library for zooming images like Medium.
+# Do not enable both `fancybox` and `mediumzoom`.
+# Dependencies: https://github.com/theme-next/theme-next-mediumzoom
+# For more information: https://github.com/francoischalifour/medium-zoom
+mediumzoom: false
+
+# Vanilla JavaScript plugin for lazyloading images.
+# Dependencies: https://github.com/theme-next/theme-next-lazyload
+# For more information: https://github.com/ApoorvSaxena/lozad.js
+lazyload: false
 
 # Pangu Support
 # Dependencies: https://github.com/theme-next/theme-next-pangu
@@ -529,31 +428,31 @@ pangu: false
 
 # Quicklink Support
 # Dependencies: https://github.com/theme-next/theme-next-quicklink
-# Visit https://github.com/GoogleChromeLabs/quicklink for details
+# For more information: https://github.com/GoogleChromeLabs/quicklink
 quicklink:
   enable: false
 
-  # Quicklink (quicklink.umd.js script) is loaded on demand
-  # Add `quicklink: true` in Front-matter of the page or post you need
-  # Home page and archive page can be controlled through home and archive options below
+  # Quicklink (quicklink.umd.js script) is loaded on demand.
+  # Add `quicklink: true` in Front-matter of the page or post you need.
+  # Home page and archive page can be controlled through home and archive options below.
   home: true
   archive: true
 
-  # Default (true) will initialize quicklink after the load event fires
+  # Default (true) will initialize quicklink after the load event fires.
   delay: true
-  # Custom a time in milliseconds by which the browser must execute prefetching
+  # Custom a time in milliseconds by which the browser must execute prefetching.
   timeout: 3000
-  # Default (true) will enable fetch() or falls back to XHR
+  # Default (true) will enable fetch() or falls back to XHR.
   priority: true
 
-  # For more flexibility you can add some patterns (RegExp, Function, or Array) to ignores
+  # For more flexibility you can add some patterns (RegExp, Function, or Array) to ignores.
   # See: https://github.com/GoogleChromeLabs/quicklink#custom-ignore-patterns
-  # Leave ignores as empty if you don't understand what it means
-  # Example:
-  # ignores:
-  #   - /\/api\/?/
-  #   - uri => uri.includes('.xml')
-  #   - (uri, el) => el.hasAttribute('noopener')
+                                                                
+            
+            
+                  
+                                   
+                                                
   ignores:
 
 # Bookmark Support
@@ -571,21 +470,6 @@ reading_progress:
   color: "#37c6c0"
   height: 2px
 
-# Google Calendar
-# Share your recent schedule to others via calendar page.
-# API Documentation: https://developers.google.com/google-apps/calendar/v3/reference/events/list
-# To get api_key: https://console.developers.google.com
-# Create & manage a public Google calendar: https://support.google.com/calendar/answer/37083
-calendar:
-  enable: false
-  calendar_id: <required> # Your Google account E-Mail
-  api_key: <required>
-  orderBy: startTime
-  offsetMax: 24 # Time Range
-  offsetMin: 4 # Time Range
-  showDeleted: false
-  singleEvents: true
-  maxResults: 250
 
 # ---------------------------------------------------------------
 # Comments and Widgets
@@ -619,72 +503,14 @@ changyan:
   appid:
   appkey:
 
-# Valine
-# You can get your appid and appkey from https://leancloud.cn
-# More info available at https://valine.js.org
-valine:
-  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
-  appid: # your leancloud application appid
-  appkey: # your leancloud application appkey
-  notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
-  avatar: mm # gravatar style
-  guest_info: nick,mail,link # custom comment header
-  pageSize: 10 # pagination size
-  language: # language, available values: en, zh-cn
-  visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
-  comment_count: true # if false, comment count will only be displayed in post page, not in home page
 
-# LiveRe comments system
-# You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
-
-# Gitment
-# Introduction: https://github.com/imsun/gitment
-gitment:
-  enable: false
-  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
-  count: true # Show comments count in post meta area
-  lazy: false # Comments lazy loading with a button
-  cleanly: true # Hide 'Powered by ...' on footer, and more
-  language: # Force language, or auto switch by theme
-  github_user: lzhp # MUST HAVE, Your Github Username
-  github_repo: lzhp.github.io # MUST HAVE, The name of the repo you use to store Gitment comments
-  client_id: b77e5967692d00920015 # MUST HAVE, Github client id for the Gitment
-  client_secret: db386728ff911004e010b9ae24c9e48af8db648c # EITHER this or proxy_gateway, Github access secret token for the Gitment
-  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
-  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
-
-# Gitalk
-# Demo: https://gitalk.github.io
-gitalk:
-  enable: false
-  github_id: # Github repo owner
-  repo: # Repository name to store issues
-  client_id: # Github Application Client ID
-  client_secret: # Github Application Client Secret
-  admin_user: # GitHub repo owner and collaborators, only these guys can initialize github issues
-  distraction_free_mode: true # Facebook-like distraction free mode
-  # Gitalk's display language depends on user's browser or system environment
-  # If you want everyone visiting your site to see a uniform language, you can set a force language value
-  # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
-  language:
 
 # ---------------------------------------------------------------
 # Content Sharing Services
 # See: https://theme-next.org/docs/third-party-services/content-sharing-services
 # ---------------------------------------------------------------
 
-# Baidu Share
-# Available values: button | slide
-# Warning: Baidu Share does not support https.
-#baidushare:
-##  type: button
 
-# AddThis Share, See: https://www.addthis.com
-# Go to https://www.addthis.com/dashboard to customize your tools.
-#add_this_id:
 
 # Likely Share
 # See: https://ilyabirman.net/projects/likely/
@@ -952,29 +778,8 @@ motion:
     # Only for Pisces | Gemini.
     sidebar: slideUpIn
 
-# Fancybox. There is support for old version 2 and new version 3.
-# Choose only one variant, do not need to install both.
-# To install 2.x: https://github.com/theme-next/theme-next-fancybox
-# To install 3.x: https://github.com/theme-next/theme-next-fancybox3
-fancybox: false
-
-# Polyfill to remove click delays on browsers with touch UIs.
-# Dependencies: https://github.com/theme-next/theme-next-fastclick
-fastclick: false
-
-# Vanilla JavaScript plugin for lazyloading images.
-# Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
-lazyload: false
-
 # Progress bar in the top during page loading.
 # Dependencies: https://github.com/theme-next/theme-next-pace
-pace: false
-# Themes list:
-# pace-theme-big-counter | pace-theme-bounce | pace-theme-barber-shop | pace-theme-center-atom
-# pace-theme-center-circle | pace-theme-center-radar | pace-theme-center-simple | pace-theme-corner-indicator
-# pace-theme-fill-left | pace-theme-flash | pace-theme-loading-bar | pace-theme-mac-osx | pace-theme-minimal
-pace_theme: pace-theme-minimal
-
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest:
@@ -985,14 +790,7 @@ canvas_nest:
   zIndex: -1 # z-index property of the background
   count: 99 # the number of lines
 
-# JavaScript 3D library.
-# Dependencies: https://github.com/theme-next/theme-next-three
-# three_waves
-three_waves: false
-# canvas_lines
-canvas_lines: false
-# canvas_sphere
-canvas_sphere: false
+
 
 # Canvas-ribbon
 # Dependencies: https://github.com/theme-next/theme-next-canvas-ribbon
@@ -1025,172 +823,3 @@ vendors:
   # jquery: //cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js
   # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
   jquery:
-
-  # Internal version: 2.1.5 & 3.5.7
-  # See: https://fancyapps.com/fancybox
-  # Example:
-  # fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
-  # fancybox: //cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js
-  # fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
-  # fancybox_css: //cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css
-  fancybox:
-  fancybox_css:
-
-  # Internal version: 1.0.6
-  # See: https://github.com/ftlabs/fastclick
-  # Example:
-  # fastclick: //cdn.jsdelivr.net/npm/fastclick@1/lib/fastclick.min.js
-  # fastclick: //cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js
-  fastclick:
-
-  # Internal version: 1.9.7
-  # See: https://github.com/tuupola/jquery_lazyload
-  # Example:
-  # lazyload: //cdn.jsdelivr.net/npm/jquery-lazyload@1/jquery.lazyload.min.js
-  # lazyload: //cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js
-  lazyload:
-
-  # Internal version: 1.2.1
-  # See: http://velocityjs.org
-  # Example:
-  # velocity: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js
-  # velocity: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js
-  # velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
-  # velocity_ui: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js
-  velocity:
-  velocity_ui:
-
-  # Internal version: 4.6.2
-  # See: https://fontawesome.com
-  # Example:
-  # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
-  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
-  fontawesome:
-
-  # Internal version: 2.10.4
-  # See: https://www.algolia.com
-  # Example:
-  # algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js
-  # algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
-  algolia_instant_js:
-  algolia_instant_css:
-
-  # Internal version: 1.0.2
-  # See: https://github.com/HubSpot/pace
-  # Example:
-  # pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
-  # pace: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js
-  # pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
-  # pace_css: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-minimal.min.css
-  pace:
-  pace_css:
-
-  # Internal version: 1.0.0
-  # See: https://github.com/theme-next/theme-next-canvas-nest
-  # Example:
-  # canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js
-  # canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js
-  canvas_nest:
-  canvas_nest_nomobile:
-
-  # Internal version: 1.0.0
-  # See: https://github.com/theme-next/theme-next-three
-  # Example:
-  # three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
-  # three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
-  # canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
-  # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
-  three:
-  three_waves:
-  canvas_lines:
-  canvas_sphere:
-
-  # Internal version: 1.0.0
-  # See: https://github.com/zproo/canvas-ribbon
-  # Example:
-  # canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
-  canvas_ribbon:
-
-  # Internal version: 3.3.0
-  # See: https://github.com/ethantw/Han
-  # Example:
-  # han: //cdn.jsdelivr.net/npm/han-css@3/dist/han.min.css
-  # han: //cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css
-  han:
-
-  # Internal version: 4.0.7
-  # See: https://github.com/vinta/pangu.js
-  # Example:
-  # pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
-  # pangu: //cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js
-  pangu:
-
-  # Internal version: 1.0.0
-  # See: https://github.com/GoogleChromeLabs/quicklink
-  # Example:
-  # quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
-  quicklink:
-
-  # Internal version: 1.0.0
-  # See: https://github.com/revir/need-more-share2
-  # Example:
-  # needmoreshare2_js: //cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js
-  # needmoreshare2_css: //cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css
-  needmoreshare2_js:
-  needmoreshare2_css:
-
-  # Internal version: 1.0.0
-  # See: https://github.com/theme-next/theme-next-bookmark
-  # Example:
-  # bookmark: //cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1/bookmark.min.js
-  bookmark:
-
-  # Internal version: 1.1
-  # See: https://github.com/theme-next/theme-next-reading-progress
-  # Example:
-  # reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js
-  reading_progress:
-
-  # leancloud-storage
-  # See: https://www.npmjs.com/package/leancloud-storage
-  # Example:
-  # leancloud: //cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js
-  leancloud:
-
-  # valine
-  # See: https://github.com/xCss/Valine
-  # Example:
-  # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
-  # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.4/Valine.min.js
-  valine:
-
-  # gitalk & js-md5
-  # See: https://github.com/gitalk/gitalk, https://github.com/emn178/js-md5
-  # Example:
-  # gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
-  # gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
-  # md5: //cdn.jsdelivr.net/npm/js-md5@0/src/md5.min.js
-  gitalk_js:
-  gitalk_css:
-  md5:
-
-  # likely
-  # See: https://github.com/ilyabirman/Likely
-  # Example:
-  # likely_js: //cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.js
-  # likely_css: //cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.css
-  likely_js:
-  likely_css:
-
-  # DisqusJS
-  # See: https://github.com/SukkaW/DisqusJS
-  # Example:
-  # disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
-  # disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
-  disqusjs_js:
-  disqusjs_css:
-
-# Assets
-css: css
-js: js
-images: images
