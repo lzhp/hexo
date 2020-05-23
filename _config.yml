@@ -119,5 +119,6 @@ deploy:
   branch: master
 
 social:
-  GitHub: https://github.com/lzhp || github
-  微博: https://weibo.com/lzhpeng || weibo
+  # 以next模板的配置文件中为准
+  # GitHub: https://github.com/lzhp || github
+  # 微博: https://weibo.com/lzhpeng || weibo

@@ -1,5 +1,5 @@
 ---
-title: win10 open samba
+title: win10打开samba协议支持
 date: 2019-10-09 21:22:00
 categories:
 tags:
