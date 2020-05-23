@@ -3,7 +3,6 @@ hexo.code-workspace
 
 # 编译结果
 public/
-db.json
 .deploy_git
 
 # Logs
