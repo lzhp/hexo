@@ -1,6 +1,31 @@
 # lzhp.github.io
 
-blog
+## 初始化
+
+1. 安装npm。
+
+    到 [nodejs网站](https://nodejs.org/en/download/) 下载nodejs安装文件，选择合适版本进行安装，安装完毕后，可以执行`npm -v`，确认安装是否成功。
+
+2. 安装hexo。
+
+    执行`npm install -g hexo-cli`，安装hexo。
+
+3. clone 本项目。
+
+    `git clone git@github.com:lzhp/hexo.git`
+
+4. 安装 Next 主题。
+
+    ``` shell
+    cd hexo
+    git clone https://github.com/theme-next/hexo-theme-next themes/next
+    ```
+
+    如果忘记执行本步骤，会导致页面空白，没有任何内容。
+
+5. 初始化项目。
+
+    目录下，执行`npm install`，执行完毕后，即可执行下边操作。
 
 ## Quick Start
 
