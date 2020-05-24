@@ -18,7 +18,7 @@
 
     ``` shell
     cd hexo
-    git clone https://github.com/theme-next/hexo-theme-next themes/next
+    git clone https://github.com/next-theme/hexo-theme-next themes/next
     ```
 
     如果忘记执行本步骤，会导致页面空白，没有任何内容。
