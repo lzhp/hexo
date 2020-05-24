@@ -3,6 +3,7 @@ title: 在win10上安裝docker
 date: 2020-05-23 21:05:18
 categories:
 tags:
+    - 开发技术
 ---
 
 Win10提供了对docker的支持，记录下Win10下如何安装docker环境。
@@ -29,4 +30,4 @@ Win10提供了对docker的支持，记录下Win10下如何安装docker环境。
 
 至此，Win10 下安装Docker成功。
 
-在安装过程中，有以下需要注意，第一次启动docker时时间很长，我在安装时还出现了几次无法启动，都是通过不断重启windows解决的；win10支持WSL2之后，不安装hyper-v也可以安装docker，但我没有尝试，以后有时间可以试试。
+在安装过程中，有以下需要注意，第一次启动docker时时间很长，我在安装时还出现了几次无法启动，都是通过不断重启windows解决的；另一个是win10支持WSL2之后，不安装hyper-v也可以安装docker，但我没有尝试，以后有时间可以试试。
