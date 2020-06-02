@@ -8,6 +8,8 @@ tags:
 
 Win10提供了对docker的支持，记录下Win10下如何安装docker环境。
 
+<!-- more -->
+
 1. 首先启用hyper-v，在“启用或关闭 Windows 功能”里，选择hyper-v功能，如下：
 
     {% asset_img install-hyper-v.png %}

@@ -11,6 +11,8 @@ tags:
 本次安装，基于 STS4.4.2 版，2019 年 8 月底。
 JDK 已经安装好的情况下。
 
+<!-- more -->
+
 1. 到官方网站下载 zip 版本的 STS 文件，官方地址：
    STS：<https://spring.io/tools>
    Eclipse：<https://www.eclipse.org/downloads/>

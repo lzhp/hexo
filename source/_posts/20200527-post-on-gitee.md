@@ -11,6 +11,8 @@ gitee号称国内的github，恰巧也支持pages服务，为了让博客多一�
 
 1. 在gitee上新建仓库，为了能用上短域名，建议仓库的名字与自己的个性化域名相同，比如，我的个性化域名是zhanchifei，那仓库名设置为zhanchifei，将来可以用[https://zhanchifei.gitee.io/](https://zhanchifei.gitee.io/)这个域名访问。这一点与github不一样，github上如果是用户名是lzhp，那么仓库的名字应该是lzhp.github.io，这样，以后可以用[https://lzhp.github.io/](https://lzhp.github.io/)这样的域名进行访问。
 
+    <!-- more -->
+
 2. 在新建仓库的最下边，选择从github导入即可。
 
     {% asset_img importfromgithub.png %}
